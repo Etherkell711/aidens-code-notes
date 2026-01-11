@@ -1,2 +1,2 @@
 # aidens-code-notes
-Notes for myself and coding
+Notes for myself about coding stuff
