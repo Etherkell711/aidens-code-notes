@@ -2,6 +2,26 @@
     margin: 0;
 }
 
+    /* Styling whole elements */
+
+section h1 {
+    line-height: 3;
+    text-align: center;
+    border: 3px solid black;
+}
+
+h4 {
+    line-height: 2.5;
+    text-decoration: underline 2px;
+    font-weight: 700;
+    font-family: "noto sans";
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
     /* Styling the <nav> element */
 
 nav {
@@ -10,7 +30,7 @@ nav {
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: hsl(0 0% 65%);
 }
 
@@ -32,14 +52,31 @@ nav h3:active {
     text-decoration-color: hsl(207 100% 50%);
 }
 
-    /* Styling the <section> and <div> elements */
+    /* Styling the section "CSS" */
 
-section {
+    /* Stylling "Flex-Box */
+
+.flex-box {
+    font-family: "fira sans";
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 40px auto;
+}
+.flex-box h2 {
+    display: inline-block;
+    line-height: 2;
+    font-family: "noto sans";
+    text-decoration: underline;
+}
+.flex-box p,
+.flex-box li {
+    line-height: 1.5;
+    text-align: justify;
+}
+.flex-box li {
+    margin: 10px 0;
 }
 
-    /* Styling the section "Concepts */
+    /* Styling the section "Concepts" */
 
     /* Styling "Grid Rows" */
 
@@ -50,12 +87,10 @@ section {
     
 }
 .grid-rows h2 {
+    display: inline-block;
     line-height: 2;
-}
-.grid-rows h4 {
-    text-align: center;
-    line-height: 2.5;
-    text-decoration: underline 2px;
+    font-family: "noto sans";
+    text-decoration: underline;
 }
 .grid-rows p {
     text-align: justify;
@@ -65,27 +100,22 @@ section {
     /* Styling "Wireframes" */
 
 .wireframes {
-    font-family: "noto sans";
-    max-width:700px;
+    font-family: "fira sans";
+    max-width: 700px;
     margin: 40px 0;
 }
 .wireframes h2 {
     display: inline-block;
     line-height: 2;
+    font-family: "noto sans";
     text-decoration: underline;
 }
 .wireframes .context {
     font-size: 13px;
     font-style: italic;
 }
-.wireframes h4 {
-    font-weight: 800;
-    line-height: 2.5;
-    text-decoration: underline 2px;
-}
 .wireframes p,
 .wireframes li {
     text-align: justify;
-    font-family: "fira sans";
     line-height: 1.5;
 }
