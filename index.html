@@ -1,118 +1,92 @@
-* {
-    margin: 0;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding Notes</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
 
-    /* Styling whole elements */
+<body>
+    <header>
+        <nav>
+            <h3>HTML</h3>
+            <a href="#css"><h3>CSS</h3></a>
+            <a href="#concepts"><h3>Concepts & Practices</h3></a>
+        </nav>
+    </header>
 
-section h1 {
-    line-height: 3;
-    text-align: center;
-    border: 3px solid black;
-}
+    <section class="css" id="css">
+        <div class="section-title">
+            <h1>CSS</h1>
+        </div>
+        <div class="flex-box">
+            <a href="https://www.codecademy.com/journeys/full-stack-engineer/paths/fscj-22-web-development-foundations/tracks/fscj-22-making-a-website-responsive/modules/wdcp-22-layout-with-flexbox-8a62abed-21fe-442a-8d4d-2b84f3d4ee3a/lessons/learn-flexbox/exercises/what-is-flexbox" target="_blank"><h2>Flex-Box</h2></a>
+            <h4>Justify-Content</h4>
+            <p>Positions the flex items in a flex container on the main axis (x axis)</p>
+            <ul>
+                <li>Flex-Start (Default) & Flex-End</li>
+                <li>Center</li>
+                <li>Space-Around & Space-Between</li>
+            </ul>
+            <h4>Align-Items</h4>
+            <p>Justify-Content but for the cross axis (y axis) but only aligns itmes on the same row</p>
+            <ul>
+                <li>Keeps values from justify-content except Space-Around & Space-Between</li>
+                <li>Baseline</li>
+                <li>Stretch (Default)</li>
+            </ul>
+            <h4>Extras</h4>
+            <p>These are easy and understandable.</p>
+            <ul>
+                <li><strong>Flex-Grow</strong></li>
+                <li><strong>Flex-Shrink</strong></li>
+                <li><strong>Flex-Basis:</strong> another way of setting width</li>
+                <li><strong>Flex:</strong> shorthand for Flex-Grow, Flex-Shrink, and Flex-Basis</li>
+                <li><strong>Flex-Wrap:</strong> nowrap, wrap, wrap-reverse</li>
+                <li><strong>Align-Content:</strong> Align-items but for all of the content in a flex container</li>
+                <li><strong>Flex-Direction:</strong> allows you to align flex items in rows and columns</li>
+                <li><strong>Flex-Flow:</strong> shorthand for both Flex-Wrap and Flex-Direction</li>
+            </ul>
+        </div>
+    </section>
 
-h4 {
-    line-height: 2.5;
-    text-decoration: underline 2px;
-    font-weight: 700;
-    font-family: "noto sans";
-}
+    <section class="Concepts" id="concepts">
+        <div class="section-title">
+            <h1>Concepts And Practices</h1>
+        </div>
+        <div class="grid-rows">
+            <a href="https://www.codecademy.com/journeys/full-stack-engineer/paths/fscj-22-web-development-foundations/tracks/fscj-22-making-a-website-responsive/modules/wdcp-22-learn-responsive-design-grids-and-spacing-dce87ef2-d059-47d0-acbf-662a32e31df8/lessons/grids-spacing/exercises/grids-spacing-grid-rows" target="_blank"><h2>Grid Rows</h2></a>
+            <h4>A row can be used to force content away from an area that has remaining columns not used. What does this mean?</h4>
+            <p>Let's say our design uses a 12 column grid and we want one element to span seven columns. That means we still have five unfilled columns to either the left or the right side. Naturally, any new content added to our document will try and fill this unused space. However, by placing a row element around our component that spans 7 columns we can force any new content to start beneath our component and leave the remaining 5 columns empty.</p>
+        </div>
+        
+        <div class="wireframes">
+            <a href="https://medium.com/thinking-design/everything-you-need-to-know-about-wireframes-and-prototypes-76f828a1bcbc" target="_blank"><h2>Wireframes</h2></a>
+            <p class="context">(Subheaders are context as to what the text I pulled from is about)</p>
+            <h4>What Is a Wireframe?</h4>
+                <p>If you check an architectural blueprint you’ll see how a given space will be allocated for different rooms, but you won’t see the finished house.</p>
+            <h4>What Does a Wireframe Look Like?</h4>
+                <p>...the visual characteristics of a wireframe are very limited.</p>
+                <p>...parts of the interface are represented by placeholders...</p>
+                <p>...Lines, placeholders, and a grayscale color palette...</p>
+            <h4>What Is The Primary Purpose of Wireframing?</h4>
+                <p>The role of wireframes is to create a foundation for designers to start from and to set a direction for the creative team.</p>
+                <p>...enable the team to focus solely on core design decisions before diving into the details.</p>
+            <h4>The Limitations of Wireframing</h4>
+                <p>...aren't good for user testing.</p>
+                <p>...won't help you if you need to describe complex design ideas...</p>
+                <p>...wireframes can show where interaction begins and ends, it doesn't describe what happens in between.</p>
+            <h4>Methods Of Wireframing</h4>
+                <p>Sketching... good for brainstorming sessions...</p>
+            <h4>Tips</h4>
+            <ul>
+                <li>Keep them simple. The key to wireframing is speed and simplicity... Details come later.</li>
+            </ul>
+        </div>
+    </section>
 
-section {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+</body>
 
-    /* Styling the <nav> element */
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 5px;
-    background-color: hsl(0 0% 65%);
-}
-
-nav h3 {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 2px;
-    font-family: "noto sans";
-    font-size: 22px;
-    cursor: pointer;
-    text-decoration: underline 2px black;
-}
-
-nav h3:hover {
-    text-decoration-color: hsl(232 95.9% 52.7%);
-}
-nav h3:active {
-    color: hsl(207 100% 50%);
-    text-decoration-color: hsl(207 100% 50%);
-}
-
-    /* Styling the section "CSS" */
-
-    /* Stylling "Flex-Box */
-
-.flex-box {
-    font-family: "fira sans";
-    max-width: 1000px;
-    margin: 40px auto;
-}
-.flex-box h2 {
-    display: inline-block;
-    line-height: 2;
-    font-family: "noto sans";
-    text-decoration: underline;
-}
-.flex-box p,
-.flex-box li {
-    line-height: 1.5;
-    text-align: justify;
-}
-
-    /* Styling the section "Concepts" */
-
-    /* Styling "Grid Rows" */
-
-.grid-rows {
-    font-family: "fira sans";
-    max-width: 1000px;
-    margin: 40px auto;
-    
-}
-.grid-rows h2 {
-    display: inline-block;
-    line-height: 2;
-    font-family: "noto sans";
-    text-decoration: underline;
-}
-.grid-rows p {
-    text-align: justify;
-    line-height: 1.5;
-}
-
-    /* Styling "Wireframes" */
-
-.wireframes {
-    font-family: "fira sans";
-    max-width: 700px;
-    margin: 40px 0;
-}
-.wireframes h2 {
-    display: inline-block;
-    line-height: 2;
-    font-family: "noto sans";
-    text-decoration: underline;
-}
-.wireframes .context {
-    font-size: 13px;
-    font-style: italic;
-}
-.wireframes p,
-.wireframes li {
-    text-align: justify;
-    line-height: 1.5;
-}
+</html>
