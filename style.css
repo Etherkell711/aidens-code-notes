@@ -1,20 +1,35 @@
 * {
     margin: 0;
+    font-family: 'fira sans';
 }
 
     /* Styling whole elements */
 
-section h1 {
+h1 {
     line-height: 3;
     text-align: center;
     border: 3px solid black;
 }
-
+h2 {
+    display: inline-block;
+    line-height: 2;
+    font-family: "noto sans";
+    text-decoration: underline;
+}
 h4 {
     line-height: 2.5;
     text-decoration: underline 2px;
     font-weight: 700;
     font-family: "noto sans";
+}
+li {
+    line-height: 1.5;
+    text-align: justify;
+    margin: 10px 0;
+}
+p {
+    text-align: justify;
+    line-height: 1.5;
 }
 
 section {
@@ -40,10 +55,8 @@ nav h3 {
     padding: 2px;
     font-family: "noto sans";
     font-size: 22px;
-    cursor: pointer;
     text-decoration: underline 2px black;
 }
-
 nav h3:hover {
     text-decoration-color: hsl(232 95.9% 52.7%);
 }
@@ -54,68 +67,23 @@ nav h3:active {
 
     /* Styling the section "CSS" */
 
-    /* Stylling "Flex-Box */
+    /* Styling multiple sections at once */
 
-.flex-box {
-    font-family: "fira sans";
+.flex-box,
+.grid-rows {
     max-width: 1000px;
     margin: 40px auto;
-}
-.flex-box h2 {
-    display: inline-block;
-    line-height: 2;
-    font-family: "noto sans";
-    text-decoration: underline;
-}
-.flex-box p,
-.flex-box li {
-    line-height: 1.5;
-    text-align: justify;
-}
-.flex-box li {
-    margin: 10px 0;
 }
 
     /* Styling the section "Concepts" */
 
-    /* Styling "Grid Rows" */
-
-.grid-rows {
-    font-family: "fira sans";
-    max-width: 1000px;
-    margin: 40px auto;
-    
-}
-.grid-rows h2 {
-    display: inline-block;
-    line-height: 2;
-    font-family: "noto sans";
-    text-decoration: underline;
-}
-.grid-rows p {
-    text-align: justify;
-    line-height: 1.5;
-}
-
     /* Styling "Wireframes" */
 
 .wireframes {
-    font-family: "fira sans";
     max-width: 700px;
     margin: 40px 0;
-}
-.wireframes h2 {
-    display: inline-block;
-    line-height: 2;
-    font-family: "noto sans";
-    text-decoration: underline;
 }
 .wireframes .context {
     font-size: 13px;
     font-style: italic;
-}
-.wireframes p,
-.wireframes li {
-    text-align: justify;
-    line-height: 1.5;
 }
